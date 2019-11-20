@@ -1,4 +1,4 @@
-from frida_plugin import FridaPlugin
+from .frida_plugin import FridaPlugin
 
 class FridaPluginStop(FridaPlugin):
     def __init__(self, settings):

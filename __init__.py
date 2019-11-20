@@ -1,16 +1,14 @@
 import sys
-if sys.platform == 'win32':
-    sys.path.append('C:\Python27\Lib\site-packages')
 
 from binaryninja import *
 
-from frida_plugin_start import FridaPluginStart
-from frida_plugin_attach import FridaPluginAttach
-from frida_plugin_stop import FridaPluginStop
-from frida_plugin_intercept import FridaPluginIntercept
-from frida_plugin_modify import FridaPluginModify
-from frida_plugin_remove import FridaPluginRemove
-from frida_plugin_reload import FridaPluginReload
+from .frida_plugin_start import FridaPluginStart
+from .frida_plugin_attach import FridaPluginAttach
+from .frida_plugin_stop import FridaPluginStop
+from .frida_plugin_intercept import FridaPluginIntercept
+from .frida_plugin_modify import FridaPluginModify
+from .frida_plugin_remove import FridaPluginRemove
+from .frida_plugin_reload import FridaPluginReload
 
 intercepts = {}
 settings = Settings("binaryninja-frida")

@@ -4,7 +4,7 @@ import frida
 import os
 import json
 
-from frida_intercept import FridaIntercept
+from .frida_intercept import FridaIntercept
 
 class FridaPlugin(object):
     def __init__(self, settings):
