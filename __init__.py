@@ -13,7 +13,7 @@ from frida_plugin_remove import FridaPluginRemove
 from frida_plugin_reload import FridaPluginReload
 
 intercepts = {}
-settings = Setting("binaryninja-frida")
+settings = Settings("binaryninja-frida")
 
 plugin_commands = [
     {
